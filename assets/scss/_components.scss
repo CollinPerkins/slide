@@ -1,0 +1,62 @@
+.hide {
+  display: none;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#playButtonSub {
+  position: fixed;
+  z-index: 19;
+  bottom: 15px;
+  left: 50%;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 5px 15px;
+  border: 2px solid red;
+  margin-left: -42px; /* Negative half of width. */
+}
+
+#countDown {
+  font-size: 35px;
+  position: fixed;
+  z-index: 19;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+#playButtonMain {
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 2px solid red;
+  z-index: 26;
+  position: fixed;
+  color: white;
+  margin-top: -30px; /* Negative half of height. */
+  margin-left: -65px; /* Negative half of width. */
+}
+#playButtonMain:hover {
+  background-color: red;
+  color: white;
+}
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: absolute;
+  z-index: 20;
+}
+
+#carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+}

@@ -1,0 +1,12 @@
+layoutHeader, layoutMiddle, layoutFooter, component, content{
+  display: block;
+}
+body {
+
+
+
+  @include media-tablet {
+  };
+  @include media-desktop {
+  };
+}

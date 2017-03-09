@@ -1,0 +1,44 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    include ./includes/header.jade
+    #overlay
+    // Carousel
+    #homeCarousel.carousel.slide
+      // Items
+      .carousel-inner
+        .item.active
+          img(src='http://lorempixel.com/1500/600/abstract/1')
+          .container
+            .carousel-caption
+              h1 Bootstrap 3 Carousel Layout
+              p This is an example layout with carousel that uses the Bootstrap 3 styles.
+              p
+                a.btn.btn-lg.btn-primary(href='http://getbootstrap.com') Learn More
+        .item
+          img(src='http://lorempixel.com/1500/600/abstract/2')
+          .container
+            .carousel-caption
+              h1 Changes to the Grid
+              p
+                | Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.
+              p
+                a.btn.btn-large.btn-primary(href='#') Learn more
+        .item
+          img(src='http://lorempixel.com/1500/600/abstract/3')
+          .container
+            .carousel-caption
+              h1 Percentage-based sizing
+              p With "mobile-first" there is now only one percentage-based grid.
+              p
+                a.btn.btn-large.btn-primary(href='#') Browse gallery
+      #countDown
+      #carouselButtons
+        button#playButtonMain.playButton.btn.btn-default.btn-xs(type='button')
+          span START
+        button.playButton#playButtonSub.btn.btn-default.btn-xs(type='button')
+          | PAUSE
+
+    
+    include ./includes/footer.jade
